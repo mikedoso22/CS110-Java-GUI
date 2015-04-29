@@ -12,3 +12,8 @@ Also the GUI does not give the best feedback in terms of when a War occurs and m
 from each Player's Deck. In the case of War, when there are multiple Cards "on the field" the total number of Cards in each 
 Player's hand will not total to 52 Cards because they are stored elsewhere. After the War ends and a winner is determined,
 all the Cards are returned to that Player's Deck, and the total number of Card's returns to 52.
+
+
+5:00PM 4/29 I think I fixed the bug that crashed the game upon a tie if a Player has too few cards
+
+8:00PM 4/29 All files are final and committed
