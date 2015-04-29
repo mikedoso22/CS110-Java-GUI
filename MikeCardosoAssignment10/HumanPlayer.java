@@ -5,12 +5,19 @@ public class HumanPlayer extends Player
 {
 
 	private ArrayList<Card> human = new ArrayList<Card>();
+	/**
+		constructs a new HumanPlayer that starts with half the Deck
+	*/ 
 	public HumanPlayer(ArrayList<Card> half)
 	{
 		super(half);
 		human = super.getPlayerDeck();
 	}
 
+
+	/**
+		overrides Player takeTurn using user input to determine if the HumanPlayer wishes to continue
+	*/
 	public int takeTurn(String response)
 	{		
 		int card = 0;

@@ -150,13 +150,14 @@ public class WarGUI extends JFrame
     		else
     			war.setResponse(false);
     		updateCardImages(); 
+    		updateStatusMessage();
     		war.step();
          	war.setResponse(false);
     		updateCardImages();
     		if (war.getGameState() != 0)
             {
             	// Figure out who won
-	            if (war.getGameState() < 0)
+	            if (war.getGameState() > 0)
 	            {
 	            	javax.swing.JOptionPane.showMessageDialog(null, "The computer won.");
 	            }
