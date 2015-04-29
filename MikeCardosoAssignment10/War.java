@@ -72,12 +72,15 @@ public class War
 
 	/**
 	  In the case of a tie, go to War
+     @param hum passes a HumanPlayer in case of tie
+     @param comp passes a generic Player in case of tie
+     @return boolean to see who the victor of the tie is
 	*/
 	public boolean warGames(HumanPlayer hum, Player comp)
 	{		
 		this.stepGameState = StepGameState.war;
 		boolean victor = false;
-    	if(hum.getHumanDeck().size() > 1 && comp.getPlayerDeck().size() > 1)
+    	if(hum.getHumanDeck().size() > 2 && comp.getPlayerDeck().size() > 2)
     	{
 			humanWar.add(hum.getHumanDeck().get(0));
 			human.removeLoss();
@@ -126,6 +129,7 @@ public class War
 
 	/**
 	  Gives access to Player and the data it contains
+     @return HumanPlayer the human in the game and its values
 	*/
 	public HumanPlayer getHumanPlayer()
 	{
@@ -135,6 +139,7 @@ public class War
 
 	/**
 	  Gives access to Player and the data it contains
+     @return Player the computer in the game and its values
 	*/
 	public Player getAIPlayer()
 	{
@@ -144,6 +149,7 @@ public class War
 
 	/**
 	  Set's the HumanPlayer response based on input from the GUI checkbox
+     @param input takes in boolean to see if user will continue playing based on GUI check box
 	*/
 	public void setResponse(boolean input)
 	{

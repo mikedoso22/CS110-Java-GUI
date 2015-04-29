@@ -15,6 +15,8 @@ public class Player
 	/**
 	Constructs a player that takes the first half
 	of the shuffled deck, and then shuffles again
+      @param half passes constructor an ArrayList to be used as that Player's hand
+
 	*/
 	public Player(ArrayList<Card> half)
 	{
@@ -39,6 +41,7 @@ public class Player
 	causes the Player to take their turn
 	if the Deck is empty the method returns -1
 	else the method returns the Rank of the Card on top of the Deck
+   @return int to determine if the game continues
 	*/
 	public int takeTurn()
 	{

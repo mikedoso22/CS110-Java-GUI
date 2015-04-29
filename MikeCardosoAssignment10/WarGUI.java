@@ -25,6 +25,11 @@ public class WarGUI extends JFrame
 	private final int SUITS = 4;
 	private String rank;
 
+
+	/**
+	  constructs a war
+     @throws FileNotFoundException if images are unfound
+	*/
 	public WarGUI() throws FileNotFoundException
 	{
 		war = new War();
@@ -89,7 +94,9 @@ public class WarGUI extends JFrame
 	}
 
 	
-
+	/**
+	  checks for new card images each time cards are played
+	*/
     private void updateCardImages()
     {
     	if(war.getHumanPlayer().getHumanDeck().size() != 0)
@@ -115,6 +122,9 @@ public class WarGUI extends JFrame
     		computerPile.revalidate();
     }	
 
+    /**
+		tells the Player how many cards are in each hand after each turn
+    */	
     private void updateStatusMessage()
     {
     	String newMessage = "<html>"+war.getStatusMessage()
@@ -132,7 +142,9 @@ public class WarGUI extends JFrame
     	}
     }
 
-
+    /**
+	  creates actions performed when Button is pressed
+    */
     private class ButtonListener implements ActionListener
     {
     	public void actionPerformed(ActionEvent a)

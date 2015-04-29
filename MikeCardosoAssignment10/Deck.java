@@ -44,6 +44,7 @@ public class Deck
 
 	/**
 	Gives access to values in the deck for comparison checks
+   @return ArrayList the list of Cards the Deck contains
 	*/
 	public ArrayList<Card> getDeck()
 	{

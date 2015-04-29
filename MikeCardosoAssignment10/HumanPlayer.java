@@ -7,6 +7,7 @@ public class HumanPlayer extends Player
 	private ArrayList<Card> human = new ArrayList<Card>();
 	/**
 		constructs a new HumanPlayer that starts with half the Deck
+      @param half passes constructor an ArrayList to be used as that Player's hand
 	*/ 
 	public HumanPlayer(ArrayList<Card> half)
 	{
@@ -17,6 +18,8 @@ public class HumanPlayer extends Player
 
 	/**
 		overrides Player takeTurn using user input to determine if the HumanPlayer wishes to continue
+      @param response takes in user input to continue playing
+      @return int determining if the game can continue
 	*/
 	public int takeTurn(String response)
 	{		
