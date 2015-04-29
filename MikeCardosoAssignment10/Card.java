@@ -2,7 +2,8 @@
  * Mike Cardoso
  * CS110
  */
-public class Card {
+public class Card 
+{
 
     public final static int SPADES = 0;   // Codes for the 4 suits, plus Joker.
     public final static int HEARTS = 1;
@@ -83,4 +84,6 @@ public class Card {
         else
             return false;
     }
+
+
 }

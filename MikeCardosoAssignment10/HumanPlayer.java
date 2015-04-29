@@ -9,16 +9,11 @@ public class HumanPlayer extends Player
 	{
 		super(half);
 		human = super.getPlayerDeck();
-		/*for(int i = half.size()/2; i < half.size(); i++)
-		{
-			human.add(half.get(i));
-		}
-		Collections.shuffle(human);*/
 	}
 
 	public int takeTurn(String response)
 	{		
-		int card = -1;
+		int card = 0;
 		if(response.equalsIgnoreCase("y"))
 		{
 			if(human.isEmpty())
